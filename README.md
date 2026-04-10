@@ -3,7 +3,7 @@ Section: BSCS 1B
 Leader: 
     John Lorenz S. Japay
 
-Members:
+Members:       
        John Christian Huit
        Lonaliza Zafra
        Ronald Mangmang
@@ -28,6 +28,7 @@ Prerequisites:
   *Python Flask
 
 Installation:
+  
   1.Git Clone: HTTPS-https://github.com/jhonlorenz791-dot/app.py.git
     SSH - git@github.com:jhonlorenz791-dot/app.py.git 
     GitHub CLI - gh repo clone jhonlorenz791-dot/app.py
@@ -37,6 +38,7 @@ Installation:
   3. Application Link - http://127.0.0.1:5000/login
 
 Module:
+
 Module 1 Login System: 
 The Login System acts as a secure gatekeeper that controls access to the program.
 It first identifies the user, then verifies the username and password. 
