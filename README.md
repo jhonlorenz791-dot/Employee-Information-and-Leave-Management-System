@@ -75,3 +75,11 @@ it allows admin to:
 * Edit Existing Profile: it allows the Admin to modify employee personal information
 * Leave Requests: it allows the Admin to see all submitted leave applications.
 * View all reports: it allows the Admin to see all reports of the employee.
+
+## Module 2: Register New Employee (Admin Dashboard)
+
+it allows admin to:
+
+* Add new employee
+
+* We enhance this module so the admin can add the employee information especially the password and username so he/she can access the system when they are registered. We ensure that the ID of every employee is unique and display a error message if the ID already existed and	all required fields must be filled out.

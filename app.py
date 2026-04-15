@@ -146,7 +146,7 @@ def admin_dashboard():
     reports = [e for e in all_emps if query in e.get_name().lower()] if query else all_emps 
     
     #Ipadala ang tanan employee data ug leave requests sa admin dashboard template para ma-display. Apil na ang filtered reports base sa search query.
-    return render_template('admin_dashboard.html', employees=all_emps, leaves=leave_reqs, reports=reports, enumerate=enumerate) 
+    return render_template('admindashboard.html', employees=all_emps, leaves=leave_reqs, reports=reports, enumerate=enumerate) 
 
 #MODULE 2: REGISTER UG EMPLOYEE
 @app.route('/register_employee', methods=['POST'])
