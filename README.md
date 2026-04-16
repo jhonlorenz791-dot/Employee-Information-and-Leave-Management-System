@@ -72,19 +72,33 @@ it allows admin to choose action:
 
 * View Employee List: it allows the Admin to see all registered employees in the system.
 * Register New Employee: it allows the Admin to add a new employee to the system.
-* Edit Existing Profile: it allows the Admin to modify employee personal information
+* Edit Employee Information: it allows the Admin to modify employee personal information
 * Leave Requests: it allows the Admin to see all submitted leave applications.
 * View all reports: it allows the Admin to see all reports of the employee.
 
+---
+
 ## Module 2: Register New Employee (Admin Dashboard)
 
-it allows admin to:
+This module allows the admin to add and register new employees into the system. Through the admin dashboard, the admin can:
 
-* Add new employee
-* Input the full name of the employee
-* Input the home address of the employee
-* Input the ID of the employee
-* Input the contact number of the employee
-* Create a username and password for the employee's account
+* Add a new employee record
+* Enter the employee’s full name
+* Enter the employee’s home address
+* Assign a unique employee ID
+* Input the employee’s contact number
+* Create a username and password for the employee’s system account
 
-* We enhance this module so the admin can add the employee information especially the password and username so the employee can access the system when they are registered. We ensure that the ID of every employee is unique and display a error message if the ID already existed and	all required fields must be filled out.
+* The system verifies that each employee ID is unique if a duplicate ID is entered an error message will be displayed and the registration will not proceed. Additionally all required fields must be completed before submission. If any field is left blank the system will show the admin with an appropriate error message and prevent the data from being saved.
+
+---
+
+## Module 3: Edit Employee Information (Admin Dashboard)
+
+the admin can modify the following information:
+
+* Employee Full Name
+* Employee Address
+* Employee Conact Number
+
+* We ensure that all required fields must be completed before any changes can be saved. If the admin attempts to submit the form with missing or incomplete information, the system will display an appropriate error message and prevent the update from being saved.
