@@ -116,3 +116,16 @@ This module allows the administrator to view a complete list of all registered e
 * Employee Leave Credits
 
 * The View All Employee List feature provides a centralized overview of employee records, making it easier for the admin to monitor, verify, and manage employee information efficiently. It ensures that important details are readily accessible, supporting better decision-making and record management within the system.
+
+---
+
+## Module 5: Admin approval process (Admin Dashboard)
+
+This module enables the admin to manage and process employee leave requests. Through the admin dashboard, the admin can:
+
+* View all submitted leave applications
+* Identify employees who are requesting
+* Approve leave requests
+* Reject leave requests
+
+* The Approve/Reject Leave Request feature allows the Admin to review each application and make appropriate decisions. Once a request is processed, its status is updated in the system, and the employee is notified accordingly. To ensure accuracy in leave management, the system automatically deducts leave credits when a request is approved. In cases where an employee submits a leave cancellation request, the system restores the corresponding leave credits once the cancellation is approved. These automated processes help maintain consistent records and reduce manual errors in tracking employee leave balances.
