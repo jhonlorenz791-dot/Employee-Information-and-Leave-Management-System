@@ -129,3 +129,17 @@ This module enables the admin to manage and process employee leave requests. Thr
 * Reject leave requests
 
 * The Approve/Reject Leave Request feature allows the Admin to review each application and make appropriate decisions. Once a request is processed, its status is updated in the system, and the employee is notified accordingly. To ensure accuracy in leave management, the system automatically deducts leave credits when a request is approved. In cases where an employee submits a leave cancellation request, the system restores the corresponding leave credits once the cancellation is approved. These automated processes help maintain consistent records and reduce manual errors in tracking employee leave balances.
+
+---
+
+## Module 6: View Reports (Admin Dashboard)
+
+This module enables the admin to view and monitor all historical activity reports within the system. It provides a comprehensive record of employee leave transactions and related actions. The admin can view the following details:
+
+* Employee Name and ID
+* Submission Date
+* Leave Date
+* Type of Request (e.g., Leave Request or Cancellation)
+* Final Status (Approved or Rejected)
+
+* The View Reports feature serves as a reliable reference for tracking past activities, ensuring transparency and accountability in the leave management process. It allows the admin to review employee requests over time, verify decisions made, and analyze patterns in leave usage. This module helps improve record-keeping, supports auditing, and assists in making informed administrative decisions.
