@@ -143,3 +143,63 @@ This module enables the admin to view and monitor all historical activity report
 * Final Status (Approved or Rejected)
 
 * The View Reports feature serves as a reliable reference for tracking past activities, ensuring transparency and accountability in the leave management process. It allows the admin to review employee requests over time, verify decisions made, and analyze patterns in leave usage. This module helps improve record-keeping, supports auditing, and assists in making informed administrative decisions.
+
+---
+
+## Module 7: Employee Dashboard and Menu Selection
+
+It allows employee to choose menu:
+
+* Employee Own Profile
+* Apply Leave Request
+* Cancel leave request
+* View Leave History
+
+---
+
+## Module 8: Apply Leave Request
+
+This module allows employees to apply for leave by providing the required information. The employee must fill in the following details:
+
+* Leave Date (e.g., Day/Month/Year)
+* Reason for Leave
+
+* The Apply Leave Request feature enables employees to submit leave requests by entering the necessary details, such as the leave date and reason. The system ensures that all required fields are properly filled out before allowing submission. If any field is incomplete, the request will not be accepted, and an appropriate message will be displayed. Additionally, the system validates the selected leave date. If the employee enters a past date, the system will not allow the request to be submitted and will display an error message. Once submitted, the leave request will be forwarded to the Admin for review and approval or rejection.
+
+---
+
+## Module 9: View Leave History
+
+This module allows employees to view their own leave history. It displays the following information:
+
+* Date Submitted
+* Reason for Leave
+* Type (e.g., Leave Request or Cancellation Request)
+* Leave Date
+* Status (Pending, Approved, or Rejected)
+
+* The View Leave History feature enables employees to easily track and review their past and current leave requests. It provides clear and organized records, helping employees monitor the status of their applications and stay informed about any updates made by the Admin.
+
+---
+
+## Module 10: Leave Cancelation
+
+This module allows employees to request the cancellation of their previously submitted or approved leave. To proceed, the employee must provide the following:
+
+* Reason for Cancellation
+
+* The Cancel Leave Request feature can be accessed through the employee’s leave history. The system ensures that a cancellation request cannot be submitted without a valid reason. If the reason field is left empty, the system will display an error message and prevent submission. Additionally, the system validates the leave date. If the employee attempts to cancel a leave with a past date, the request will not be allowed. All cancellation requests are subject to Admin approval. Once submitted, the request will be reviewed and either approved or rejected by the Admin.
+
+---
+
+## Module 11: View Own Profile
+
+This module allows employees to view their own personal information. It displays the following details:
+
+* Employee ID
+* Full Name
+* Address
+* Contact Number
+* Available Leave Credits
+
+* The View Own Profile feature enables employees to easily access and review their personal details and current leave balance. This helps ensure transparency and allows employees to stay informed about their records within the system.
