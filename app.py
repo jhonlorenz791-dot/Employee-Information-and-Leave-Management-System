@@ -325,15 +325,44 @@ def apply_leave():
     emp_id = session.get('user_id')
     emp_info = Employee.employee_data.get(str(emp_id))
 
+    if not emp_info:
+        flash("Error: Invalid employee session.", "danger")
+        return redirect(url_for('employee_dashboard'))
+
     reason = request.form.get('reason')
     leave_date = request.form.get('leave_date')
 
-    if emp_info:
-        LeaveSystem.apply_leave(emp_info.get_name(), emp_id, reason, leave_date)
-        flash("Leave request submitted successfully!", "success")
+    # check missing inputs
+    if not reason:
+        flash("Error: Please provide a reason.", "warning")
+        return redirect(url_for('employee_dashboard'))
 
+    if not leave_date:
+        flash("Error: Please provide a leave date.", "warning")
+        return redirect(url_for('employee_dashboard'))
+
+    # ✅ convert date safely
+    try:
+        leave_date_obj = datetime.strptime(leave_date, "%Y-%m-%d").date()
+    except ValueError:
+        flash("Error: Invalid date format.", "danger")
+        return redirect(url_for('employee_dashboard'))
+
+    #BLOCK PAST DATES (IMPORTANT)
+    if leave_date_obj < date.today():
+        flash("Error: You cannot apply for past dates.", "danger")
+        return redirect(url_for('employee_dashboard'))
+
+    # apply leave only if all checks pass
+    LeaveSystem.apply_leave(
+        emp_info.get_name(),
+        emp_id,
+        reason,
+        leave_date
+    )
+
+    flash("Leave request submitted successfully!", "success")
     return redirect(url_for('employee_dashboard'))
-
 
 # =====================================================
 # MODULE 10: LEAVE CANCELLATION
