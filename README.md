@@ -183,7 +183,7 @@ This module allows employees to view their own leave history. It displays the fo
 ---
 
 
-## Module 10: Leave CancelLation
+## Module 10: Leave Cancellation
 
 This module allows employees to request the cancellation of their previously submitted or approved leave. To proceed, the employee must provide the following:
 
