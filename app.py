@@ -187,12 +187,7 @@ def admin_dashboard():
     reports = [e for e in all_emps if query in e.get_name().lower()] if query else all_emps
 
     return render_template(
-        'admindashboard.html',
-        employees=all_emps,
-        leaves=leave_reqs,
-        reports=reports,
-        enumerate=enumerate
-    )
+        'admindashboard.html',employees=all_emps,leaves=leave_reqs,reports=reports,enumerate=enumerate)
 
 
 # =====================================================
