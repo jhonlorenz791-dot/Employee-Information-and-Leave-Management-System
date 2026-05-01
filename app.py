@@ -122,7 +122,7 @@ class LeaveSystem:
 #  DATABASE 
 # ============
 users_db = [
-    User("admin", "admin123", "admin"),
+    User("admin", "admin123", "admin", linked_emp_id="0"),
     User("employee", "employee123", "employee", linked_emp_id="101")
 ]
 
