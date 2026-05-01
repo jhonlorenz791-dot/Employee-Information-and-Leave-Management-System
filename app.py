@@ -16,7 +16,7 @@ class Person(ABC):
     def get_name(self):
         return self._name
 
-    # 🔥 ABSTRACT METHOD (REQUIRED)
+    # ABSTRACT METHOD 
     @abstractmethod
     def display_role(self):
         pass
@@ -76,7 +76,7 @@ class Employee(Person):
     def display_role(self):
         return "Employee"
 
-    # Abstraction (hidden logic)
+    # Abstraction 
     @classmethod
     def add_new_employee(cls, name, emp_id, address, contact, user_name, user_password):
         if str(emp_id) in cls.employee_data:
