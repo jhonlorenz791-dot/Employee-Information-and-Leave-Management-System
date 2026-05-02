@@ -172,19 +172,21 @@ def logout():
 
 # =====================================================
 # MODULE 1: ADMIN DASHBOARD and ACTION SELECTION
-# MODULE 4: VIEW ALL EMPLOYEE LIST
-# MODULE 6: VIEW REPORTS
 # =====================================================
 @app.route('/admindashboard')
 def admin_dashboard():
     if session.get('role') != 'Admin':
         return redirect(url_for('login'))
 
+    #=================================
     #MODULE 4: VIEW ALL EMPLOYEE LIST
+    #=================================
     all_emps = list(Employee.employee_data.values())
     leave_reqs = LeaveSystem.leave_requests
-
+    
+    #==============================================
     #MODULE 6: VIEW REPORTS (SEARCH FUNCTIONALITY)
+    #==============================================
     query = request.args.get('search', '').lower()
     reports = [e for e in all_emps if query in e.get_name().lower()] if query else all_emps
 
